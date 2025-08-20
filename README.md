@@ -61,3 +61,15 @@ LLM Healthboard (Status Monitor)
 - 10분 기준 p95 지연 > 5s
 - 공식 상태=Operational인데 실패율 > 10%
 - 특정 지역만 오류율 급증 시 감지
+
+
+###  모니터링 대상: 최신 LLM 모델 (2025.08.20 기준)
+
+| 공급사          | 최신 모델                                                                  |
+|---------------|--------------------------------------------------------------------------|
+| **OpenAI**    | GPT-5 *(2025-08)*<br>GPT-4.5, o3, o4-mini *(2025-H1)*                    | 
+| **Anthropic** | Claude Sonnet 4 / Opus 4 *(2025-05)*<br>Claude Opus 4.1 *(2025-08)*      |
+| **Google**    | Gemini 2.5 (Flash / Pro / Flash-Lite) *(2025-06 GA)*                     |
+| **xAI (Grok)**| Grok 4 & Grok 4 Heavy *(2025-07)*                                        |
+| **Cohere**    | 최신 모델 명시 없음 (기업용 모델 제공 중)                                         |
+| **Mistral**   | Magistral Small / Medium *(2025-06)*<br>Mistral Small 3.1 / Medium 3     |
