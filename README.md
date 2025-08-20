@@ -73,3 +73,14 @@ LLM Healthboard (Status Monitor)
 | **xAI (Grok)**  | Grok 4 (+ Grok 4 Heavy)                     |
 | **Cohere**      | Command A (03-2025)                         |
 | **Mistral**     | Mistral Small 3.1, Magistral (Small/Medium) |
+
+
+## 1토큰 호줄 시 발생하는 호출 비용 (입력 + 출력 기준)
+
+| 공급사       | 모델                | 1회 호출 비용 (USD) |
+|--------------|---------------------|---------------------|
+| **OpenAI**   | GPT-5               | ≈ **$0.00001125**  |
+| **Anthropic**| Claude Opus 4.1     | ≈ **$0.00009000**  |
+| **Google**   | Gemini 2.5 Pro      | **≤ $0.00001750**  |
+| **Cohere**   | Command A           | **$0.00001250**    |
+| **Mistral**  | Small 3.1           | **$0.00000040**    |
