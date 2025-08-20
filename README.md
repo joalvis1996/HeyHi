@@ -11,49 +11,30 @@ LLM Healthboard (Status Monitor)
 
 2. 범위
 
-공급사/모델별 체크 (max_tokens=1)
-
-수집: ok, http_status, error_type, latency_ms, (옵션) 토큰 수
-
-대시보드: 성공/실패율, p50/p95 지연, 이벤트 타임라인
-
-알림: Slack/메일(Webhook)
-
-제외: 자동 페일오버, 비용 추정 정밀화(후순위)
+- 공급사/모델별 체크 (max_tokens=1)
+- 수집: ok, http_status, error_type, latency_ms, (옵션) 토큰 수
+- 대시보드: 성공/실패율, p50/p95 지연, 이벤트 타임라인
+- 알림: Slack/메일(Webhook)
+- 제외: 자동 페일오버, 비용 추정 정밀화(후순위)
 
 3. KPI
 
-MTTD: 5~10분 이내
-
-오탐률: 주 1회 이하
-
-비용: 월 5달러 이하
-
-가시성: 최근 30일 추세 확인 가능
-
-4. 주요 사용자
-
-엔지니어: 장애 감지·원인 추적
-
-운영/CS: 공지 타이밍 판단
-
-PM/리더: 공급사 안정성 비교
+- MTTD: 5~10분 이내
+- 오탐률: 주 1회 이하
+- 비용: 월 5달러 이하
+- 가시성: 최근 30일 추세 확인 가능
 
 5. 아키텍처
 
-체커: Cloudflare Workers / GitHub Actions (크론 2~5분)
-
-DB: Supabase (Postgres Free)
-
-대시보드: Grafana Cloud Free
-
-알림: Slack Webhook / 이메일
+- 체커: Cloudflare Workers / GitHub Actions (크론 2~5분)
+- DB: Supabase (Postgres Free)
+- 대시보드: Grafana Cloud Free
+- 알림: Slack Webhook / 이메일
 
 구성:
 
-synthetic-checker: API 호출 → Supabase 저장
-
-status-poller: (선택) 공식 상태 수집
+- synthetic-checker: API 호출 → Supabase 저장
+- status-poller: (선택) 공식 상태 수집
 
 6. 합성 체크 설계
 
