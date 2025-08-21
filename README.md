@@ -105,3 +105,4 @@ LLM Healthboard (Status Monitor)
      [HeyHi Alert] Claude-3-haiku 오류율 30% (도쿄 리전)
      상태 페이지: Operational / 실제: 장애 감지
      ```
+     

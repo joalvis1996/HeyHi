@@ -1,0 +1,13 @@
+{
+    "name": "heyhi/status-monitor",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alvisjo",
+            "email": "lwalwakk1@naver.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
