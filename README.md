@@ -84,3 +84,24 @@ LLM Healthboard (Status Monitor)
 | **Google**   | Gemini 2.5 Pro      | **≤ $0.00001750**  |
 | **Cohere**   | Command A           | **$0.00001250**    |
 | **Mistral**  | Small 3.1           | **$0.00000040**    |
+
+---
+
+### 추가 기능 [작성중]
+ 
+1. **안정적인 모델 추천**
+   - 실시간 체크 데이터를 바탕으로 현재 가장 안정적인 LLM 모델을 API로 추천
+   - 지연·오류율 점수를 종합하여 `score` 산출
+   - 예시: `/api/recommend` → `{ provider: "OpenAI", model: "gpt-4o-mini", score: 0.93 }`
+ 
+2. **상태 이상 알림**
+   - 장애 조건(SLO) 감지 시 Slack/이메일로 즉시 알림
+   - 조건:
+     - 실패율 > 20% (5분 윈도우)
+     - p95 지연 > 5s (10분 윈도우)
+     - 공급사 상태 페이지와 실제 호출 결과 불일치
+   - 알림 예시:
+     ```
+     [HeyHi Alert] Claude-3-haiku 오류율 30% (도쿄 리전)
+     상태 페이지: Operational / 실제: 장애 감지
+     ```
